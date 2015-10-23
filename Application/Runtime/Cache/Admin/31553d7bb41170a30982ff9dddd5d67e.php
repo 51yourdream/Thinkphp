@@ -37,7 +37,7 @@
   </div>
   <div class="form-group has-success">
     <label class="control-label" for="data">额外参数</label>
-    <input type="text" class="form-control" id="data" name="data" placeholder="请填写额外参数" required>
+    <input type="text" class="form-control" id="data" name="data" placeholder="请填写额外参数">
     <span class="help-block"></span>
     <p class="help-block">格式为:<span class="bg-primary">?a=1&b=3或者/a=1/b=2</span></p>
   </div>
@@ -56,6 +56,11 @@
         <option value="1">权限认证加菜单</option>
       </select>
       <span class="help-block"></span>
+  </div>
+  <div class="form-group has-success">
+    <label class="control-label" for="listorder">排序</label>
+    <input type="text" class="form-control" id="listorder" name="listorder" placeholder="填写排序数字">
+    <span class="help-block"></span>
   </div>
   <button type="submit" class="btn btn-primary" onclick="upload();">添加</button>
   <button type="reset" class="btn btn-danger">重置</button>

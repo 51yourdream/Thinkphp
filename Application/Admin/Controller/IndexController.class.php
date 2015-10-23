@@ -3,7 +3,13 @@ namespace Admin\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-    	
+	    $menu = M("menu");
+        $list =$menu->select();
+        foreach($list as $k=>$v){
+            $newlist[$v['pid']][]=$v;
+        }
+        $this->assign("list",$list);
+        $this->assign("newlist",$newlist);
     	$this->display();
     }
 

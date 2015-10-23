@@ -12,11 +12,17 @@ class MenuModel extends Model{
 			array('controller','require','请填写控制器名称!',self::MUST_VALIDATE),
 			array('action','require','请填写方法名称!',self::MUST_VALIDATE),
 			array('name','require','请填写菜单名称!',self::MUST_VALIDATE),
-		);
+			array('listorder','number','请填写数字',self::VALUE_VALIDATE),
+			array('data','/(^\?.*)|(^\/.*)/','格式不正确',self::VALUE_VALIDATE,'regex'),
+		);	
 	protected $patchValidate = true;	//开启批量验证
 	protected $_auto = array(
-
+				array('module','strtolower',3,'function'),
+				array('module','ucfirst',3,'function'),
+				array('controller','strtolower',3,'function'),
+				array('controller','ucfirst',3,'function'),
+				array('listorder','intval',3,'function')
 		);
 
-	
 }
+	

@@ -46,6 +46,11 @@
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 " style="padding:0px">
 			<div class="nav-left-container" style="position:relative;">
 				<ul>
+					<?php if(is_array($list)): foreach($list as $key=>$vo): ?><li onclick="qkhl_nav(this)"><span class="glyphicon glyphicon-cog"></span>&nbsp;<span><?php echo ($vo["name"]); ?></span></li>
+						<?php if($newlist[$vo['id']] != 'null'): ?><ul class="qhkl-hidden">
+							<?php if(is_array($$newlist[$vo['id']])): foreach($$newlist[$vo['id']] as $key=>$voo): var_dump($voo);?>
+								<li onclick="qkhl_nav(this)"><span></span><span><?php echo ($voo["name"]); ?></span></li><?php endforeach; endif; ?>
+							</ul><?php endif; endforeach; endif; ?>
 					<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span class="glyphicon glyphicon-cog"></span>&nbsp;<span>网站设置</span></li>
 					<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load" ><span class="glyphicon glyphicon-cog"></span>&nbsp;<span>权限设置</span></li>
 					<ul class="qhkl-hidden">
