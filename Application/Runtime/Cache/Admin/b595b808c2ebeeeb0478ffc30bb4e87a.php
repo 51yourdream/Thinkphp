@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="/thinkphp/Public/css/bootstrap.css">
-	<link rel="stylesheet" href="/thinkphp/Public/css/common.css">
+	<link rel="stylesheet" href="/my/thinkphp/Public/css/bootstrap.css">
+	<link rel="stylesheet" href="/my/thinkphp/Public/css/common.css">
 	<title><?php echo ($title); ?></title>
-	<script src="/thinkphp/Public/js/jquery-2.1.4.min.js"></script>
-	<script src="/thinkphp/Public/js/bootstrap.min.js"></script> 
-	<script src="/thinkphp/Public/js/jquery.form.js"></script> 
+	<script src="/my/thinkphp/Public/js/jquery-2.1.4.min.js"></script>
+	<script src="/my/thinkphp/Public/js/bootstrap.min.js"></script> 
+	<script src="/my/thinkphp/Public/js/jquery.form.js"></script> 
 </head>
 <body> <!-- 公共头文件 -->
 	<div class="container-fluid">
@@ -22,7 +22,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="/thinkphp/index.php/Admin/Index/index/">logo标签开心蛙</a>
+		      <a class="navbar-brand" href="/my/thinkphp/index.php/Admin/Index/index/">logo标签开心蛙</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,49 +46,58 @@
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 " style="padding:0px">
 			<div class="nav-left-container" style="position:relative;">
 				<ul>
-					<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load"><span class="glyphicon glyphicon-cog"></span>&nbsp;<span>网站设置</span></li>
-					<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load" ><span class="glyphicon glyphicon-cog"></span>&nbsp;<span>权限设置</span></li>
+					<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span class="glyphicon glyphicon-cog"></span>&nbsp;<span>网站设置</span></li>
+					<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load" ><span class="glyphicon glyphicon-cog"></span>&nbsp;<span>权限设置</span></li>
 					<ul class="qhkl-hidden">
-						<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load"><span></span><span>规则管理</span></li>
+						<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span></span><span>规则管理</span></li>
 						<ul class="qhkl-hidden">
-							<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load"><span></span><span>查看规则</span></li>
-							<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load"><span></span><span>添加规则</span></li>
+							<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span></span><span>查看规则</span></li>
+							<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span></span><span>添加规则</span></li>
 						</ul>
-						<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load"><span></span><span>组管理</span></li>
+						<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span></span><span>组管理</span></li>
 						<ul class="qhkl-hidden">
-							<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load"><span></span><span>查看规则</span></li>
-							<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load"><span></span><span>添加规则</span></li>
+							<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span></span><span>查看规则</span></li>
+							<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span></span><span>添加规则</span></li>
 						</ul>
-						<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load"><span></span><span>组权限</span></li>
+						<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span></span><span>组权限</span></li>
 						<ul class="qhkl-hidden">
-							<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load"><span></span><span>查看规则</span></li>
-							<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Index/load"><span></span><span>添加规则</span></li>
+							<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span></span><span>查看规则</span></li>
+							<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Index/load"><span></span><span>添加规则</span></li>
 						</ul>
 					</ul>
-					<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Menu/index"><span class="glyphicon glyphicon-cog"></span>&nbsp;<span>菜单设置</span></li>
+					<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Menu/index"><span class="glyphicon glyphicon-cog"></span>&nbsp;<span>菜单设置</span></li>
 					<ul class="qhkl-hidden">
-						<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Menu/index"><span></span><span>查看菜单</span></li>
-						<li onclick="qkhl_nav(this)" url="/thinkphp/index.php/Admin/Menu/add"><span></span><span>添加菜单</span></li>
+						<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Menu/index"><span></span><span>查看菜单</span></li>
+						<li onclick="qkhl_nav(this)" url="/my/thinkphp/index.php/Admin/Menu/add"><span></span><span>添加菜单</span></li>
 					</ul>
 				</ul>
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 qkhl-content" style="padding:0px">
 			<div class="row">
-				<!-- <div class="col-xs-8">
+				<div class="col-xs-8 col-sm-12 col-md-12 col-lg-4">
 					<ol class="breadcrumb" style="background:none;">
 					  <li><a href="#">Home</a></li>
 					  <li><a href="#">Library</a></li>
 					  <li class="active">Data</li>
 					</ol>
-				</div> -->
-				<div class="col-xs-12"><span class="glyphicon glyphicon-refresh pull-right refresh"  id="qkhl-refresh" onclick="qkhl_load(this);" url="/thinkphp/index.php/Admin/Index/indexLoad"></span><img style="padding:8px 0px" src="/thinkphp/Public/images/loading2.gif" width="30px" class="pull-right hidden"></div>
+				</div>
+				<div class="col-sm-8 col-sm-8 col-md-8 col-lg-5 hidden-xs" style="padding-left:20px;">
+					<iframe allowtransparency="true" frameborder="0" width="575" height="96" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=3&t=0&v=0&d=5&bd=0&k=&f=004040&q=1&e=1&a=1&c=54511&w=575&h=96&align=center"></iframe>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+					<div class='refresh-handle'>
+						<span class="glyphicon glyphicon-refresh pull-right refresh"  id="qkhl-refresh" onclick="qkhl_load(this);" url="/my/thinkphp/index.php/Admin/Index/indexLoad"></span>
+						<img src="/my/thinkphp/Public/images/loading2.gif" width="30px" class="pull-right hidden">
+					</div>
+					
+				</div>
 			</div>
 			<div id="data-container" class="padding-rf-15">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 margin-bottom-10">
 						<div class="qkhl-border qkhl-border-primary">
-							<img src="/thinkphp/Public/images/head.jpg" class="img-circle text-center center-block" width="120px" height="120px;">
+							<img src="/my/thinkphp/Public/images/head.jpg" class="img-circle text-center center-block" width="120px" height="120px;">
 							<p class="text-center center-block padding-tb-10" >用户名</p>
 							<p class="text-center center-block">欢迎!<span class="label label-info">李四</span><span class="label label-primary">超级管理员</span>，这是您第<span class="badge badge-info">(100)</span>次登录，上次登录ip是:<span class="label label-primary">192.168.0.1</span>如果有疑问请及时<a href="" class="btn btn-danger btn-xs">修改密码</a></p>
 						</div>
@@ -112,6 +121,6 @@
 		</div>
 	</div>
 
-<script src="/thinkphp/Public/js/common.js"></script>
+<script src="/my/thinkphp/Public/js/common.js"></script>
 </body>
 </html> <!-- 公共页脚 -->

@@ -63,14 +63,23 @@
 		</div>
 		<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 qkhl-content" style="padding:0px">
 			<div class="row">
-				<!-- <div class="col-xs-8">
+				<div class="col-xs-8 col-sm-12 col-md-12 col-lg-4">
 					<ol class="breadcrumb" style="background:none;">
 					  <li><a href="#">Home</a></li>
 					  <li><a href="#">Library</a></li>
 					  <li class="active">Data</li>
 					</ol>
-				</div> -->
-				<div class="col-xs-12"><span class="glyphicon glyphicon-refresh pull-right refresh"  id="qkhl-refresh" onclick="qkhl_load(this);" url="__MODULE__/Index/indexLoad"></span><img style="padding:8px 0px" src="__PUBLIC__/images/loading2.gif" width="30px" class="pull-right hidden"></div>
+				</div>
+				<div class="col-sm-8 col-sm-8 col-md-8 col-lg-5 hidden-xs" style="padding-left:20px;">
+					<iframe allowtransparency="true" frameborder="0" width="575" height="96" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=3&t=0&v=0&d=5&bd=0&k=&f=004040&q=1&e=1&a=1&c=54511&w=575&h=96&align=center"></iframe>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+					<div class='refresh-handle'>
+						<span class="glyphicon glyphicon-refresh pull-right refresh"  id="qkhl-refresh" onclick="qkhl_load(this);" url="__MODULE__/Index/indexLoad"></span>
+						<img src="__PUBLIC__/images/loading2.gif" width="30px" class="pull-right hidden">
+					</div>
+					
+				</div>
 			</div>
 			<div id="data-container" class="padding-rf-15">
 				<div class="row">

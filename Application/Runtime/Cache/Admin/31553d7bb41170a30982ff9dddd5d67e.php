@@ -1,10 +1,10 @@
 <?php if (!defined('THINK_PATH')) exit();?><div class="page-header">
   <h4><?php echo ($header); ?><small></small></h4>
 </div>
-<form  id="menu-add" action="/thinkphp/index.php/Admin/Menu/insert" method="post" onsubmit="return false">
+<form  id="menu-add" action="/my/thinkphp/index.php/Admin/Menu/insert" method="post" onsubmit="return false">
   <div class="form-group has-success">
     <label class="control-label" for="pid">父级</label>
-    <select class="form-control" id="pid">
+    <select class="form-control" id="pid" name="pid">
     <option value="0">一级菜单</option>
     <?php if(is_array($menuList)): foreach($menuList as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>" <?php if($vo["id"] == $pid): ?>selected<?php endif; ?>><?php echo str_repeat('&nbsp;',(substr_count($vo['path'],",")-1)*2); echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
     </select>

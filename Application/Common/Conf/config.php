@@ -7,7 +7,7 @@ return array(
     'DB_HOST'               =>  '127.0.0.1', // 服务器地址
     'DB_NAME'               =>  'auth',    // 数据库名
     'DB_USER'               =>  'root',      // 用户名
-    'DB_PWD'                =>  'o123456',          // 密码
+    'DB_PWD'                =>  '',          // 密码
     'DB_PORT'               =>  '',        // 端口
     'DB_PREFIX'             =>  'kxw_',    // 数据库表前缀
     'SHOW_PAGE_TRACE'   =>  true,   //显示页面Trace信息 

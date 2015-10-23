@@ -1,5 +1,21 @@
 body{background:#FAFFF0;}
 ul,li{list-style:none;}
+@media screen and (min-width: 768px) {	/*当屏幕大于等于768px时*/
+   .qkhl-content .breadcrumb{
+     line-height:78px;
+   }
+   .qkhl-content .refresh-handle>span{
+     line-height:78px;
+   }
+   .qkhl-content .refresh-handle img{
+     padding-top:33px;
+   }
+ }
+ @media screen and (max-width: 768px) {	/*当屏幕小于等于768px时*/
+    .qkhl-content .refresh-handle img{
+      padding-top:8px;
+    }
+  }
 .padding-rf-15{padding-right:15px;padding-left:15px;}
 .padding-rf-10{padding-right:10px;padding-left:10px;}
 
